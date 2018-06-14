@@ -7,10 +7,7 @@ title: Test
 *Well* **Met**  
 **well _met_**  
 ~~well met~~  
-
-
 * Well Met
-
 - Well Met
 1. Well Met
 2. Well Met
