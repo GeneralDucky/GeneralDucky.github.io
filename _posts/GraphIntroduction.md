@@ -8,7 +8,7 @@ In addition, code will be presented in Java
 
 A graph is a collection of vertices (nodes) that are connected with a set of edges. The graph below has 4 nodes and 4 edges.
 
-Pic1
+![](
 
 Graphs are used to model a vast variety of things, such as the spread of disease and computer networks. As graph theory (the study of graphs) is far too large of a subject cover, we will primarily focus on computer science algorithms concerning graphs.
 
