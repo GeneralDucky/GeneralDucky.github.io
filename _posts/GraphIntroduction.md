@@ -20,16 +20,9 @@ Path: There exists a path between two nodes if we can start from one node and tr
 Cycle: A path is called a cycle if it begins and ends at the same node.  
 Connected graph: A graph is considered to be connected if we can find a path between every pair of vertices. The graph in Picture 1 is not a connected graph, since we can’t reach Node 4 from some of the other nodes.  
 Tree: A connected graph with no cycles  
-Connected component: A connected component of a graph is a subset of its nodes such that these nodes are all connected with each other. For example, in Picture 1, a connected component would be Node 4 by itself, or Nodes 0,1,2, and 3.  
+Connected component: A connected component of a graph is a subset of its nodes such that these nodes are all connected with each other. For example, in Picture 1, a connected component would be Node 4 by itself, or Nodes 0,1,2, and 3.
 
-
-
-
-![](/images/Capture.png)
-
-
-
-
+![_config.yml]({{ http://generalducky.github.io}}/images/Capture.png)
 
 There are 2 common methods to represent a graph in computer science:  
 Adjacency Matrix: We create a square matrix with entries that tell us whether 2 nodes have an edge between them or not. For example, the adjacency matrix representing the graph in Picture 1 is shown below:   
