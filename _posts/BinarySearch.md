@@ -28,7 +28,30 @@ We compute the halfway point of this list ((5+9)/2=7).
   
 The 7th element is 8, so our list is once again reduced to the following:  
 {9,10}.  
-Computing the halfway point again (element 8), we see that the 8th element is indeed 9, so we are done.    
+Computing the halfway point again (element 8), we see that the 8th element is indeed 9, so we are done.  
   
 Binary Search is known as Decrease and Conquer algorithm because it reduces the size of the problem that we are solving.  
-Notice how at every iteration, we cut the size of the array we are searching on by half. This behavior gives Binary Search an excellent runtime of O(logn).
+Notice how at every iteration, we cut the size of the array we are searching on by half. This behavior gives Binary Search an excellent runtime of O(logn).  
+  
+We'll implement Binary Search recursively for simplicity:  
+```java
+//This algorithm returns the index of the target if found. Otherwise, returns -1. 
+public int binSearch(int low, int high, int[] array, int target){ 
+  if(high >= low){                           //low represents the left endpoint of the interval we are searching on
+      int halfway = (low+high)/2;            //high represents the right endpoint of the interval we are searching on
+      if(array[halfway] == target) {
+        return halfway;                            //Case 1: We've found the target, so return
+      }
+      else if(array[halfway] < target) {                      //Case 2: The halfway element is too low.
+        return binSearch(halfway + 1, high, array, target);   //So we search the upper half of the curreint interval
+      }
+       else {                                                  //Case 3: The halfway element is too high
+        return binSearch(low, halfway - 1, array, target);     //So we search the lower half of the current interval
+       }
+  }
+  return -1;                                  //At this point, we know that the target is not in the array.
+                                              //We've narrowed down the possible location of the target to be a single number.
+                                              //And that location wasn't the target.
+}
+```
+We can actually improve this algorithm by a small amount. Note that integer overflow could occurr by doing (low+high)/2, even though the end result is actually lower than Integer.MAX_VALUE. We can change this to low + (high-low)/2 to avoid this problem.
