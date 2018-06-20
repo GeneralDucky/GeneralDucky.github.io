@@ -2,10 +2,7 @@
 layout: post
 title: Binary Search
 ---
----
-layout: post
-title: Binary Search
----
+
 # Intro
 Binary Search is an efficient method of searching in an ordered list.  
 If we have an unordered list and are told to search for a particular element, we have no choice but to search the entire list.
