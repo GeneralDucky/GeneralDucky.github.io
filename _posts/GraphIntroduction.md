@@ -25,7 +25,7 @@ Connected component: A connected component of a graph is a subset of its nodes s
 
 
 
-![](https://www.draw.io/#G1b4P_7JQyOqgRp_UutS_80riIcABb6Uu9)
+![](/images/Capture.png)
 
 
 
