@@ -24,6 +24,7 @@ We’ll need some basic definitions to begin:
 
 There are 2 common methods to represent a graph in computer science:  
 **Adjacency Matrix**: We create a square matrix with entries that tell us whether 2 nodes have an edge between them or not. For example, the adjacency matrix representing Graph 1 is shown below:   
+
 ![Matrix](https://github.com/GeneralDucky/GeneralDucky.github.io/blob/master/images/Capture.PNG)  
 
 In order to determine if Node 0 and Node 2 are connected with an edge, we will look at entry (0,2) or (2,0). We see that it is a 1, so this means that Node 0 and Node 2 have an edge between them.  
