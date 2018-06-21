@@ -2,10 +2,12 @@
 layout: post
 title: DFS/BFS applications
 ---
-Bipartite check:
+# Bipartite check:
 
-A graph is considered bipartite if we can divide the graph into 2 groups of nodes, with the special characteristic that all edges are between the groups of nodes. The following graph shows an example of a bipartite graph:
-Pic3
+A graph is considered bipartite if we can divide the graph into 2 groups of nodes, with the special characteristic that all edges are between the groups of nodes.  
+The following graph shows an example of a bipartite graph:
+
+![Graph1](/images/Pic3.PNG)
 
 Using the definition of a bipartite graph, we can come up with a way to check if a given graph is bipartite.
 
@@ -14,11 +16,11 @@ We traverse through the graph using either BFS/DFS. As we traverse the graph, we
 We can assign the root node an arbitrary color, then run DFS/BFS.
 Suppose we are currently visiting a blue colored node. Then we can color all the node’s uncolored neighbors red. If the node has any colored neighbors, they must be blue. If we find any neighbors that are colored blue, then the graph is not bipartite.
 
-Connected components:
+# Connected components:
 
 We can also use BFS/DFS to identify the connected components of a graph. We go through a list of all the nodes in the graph. Whenever we encounter an unmarked node, we will run BFS/DFS using that node as a root. During the traversal of the graph, we mark each node that we come across. When BFS/DFS stops, we have traversed a connected component. Then, we continue iterating through the list of nodes until every node has been marked.
 
-Flood Fill:
+# Flood Fill:
 
 Flood Fill is a simple algorithm that determines the total area connected to a node. This is the algorithm behind the bucket function in paint applications. 
 
