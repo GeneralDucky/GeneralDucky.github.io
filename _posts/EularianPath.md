@@ -13,7 +13,7 @@ Below is a simplified version of Koningsberg
 In order to solve the the 7 Bridges of Konigsberg problem, we'll need to make a few observations.  
 Let's examine the following picture:  
 
-![](/images/Pic5.1.PNG)
+![](/images/Pic5sub1.PNG)
 
 Suppose we've started our walk on a different node than the one shown in Picture 2.  
 If we want to traverse every edge, then we will have to use 1 edge to reach Node 1, 1 edge to leave Node 1, and 1 edge to come back to Node 1 again.  
