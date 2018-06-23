@@ -48,6 +48,13 @@ The proof of correctness of Fleury's Algorithm is somewhat complex, so we won't 
 Hierholzer's Algorithm is a faster algorithm used to find **Eulerian cycles**, which are Eularian paths that start and end on the same node. For an Eulerian cycle to exist, all nodes must have an even degree.  
 We start at any arbitrary node and traverse the edge in the same manner as in Fleury's Algorithm. The only difference is that we have no restrictions on which edges we can traverse. 
 
+With Hierholzer's Algorithm, we traverse the graph in a random manner until we get stuck. The only way we can get stuck is if we arrive back to the starting node. This is because the starting node is the only node with an odd degree, since we use 1 edge to leave the starting node.  
+
+Once we get stuck, we pick a node on the current path that still has untraversed edges. We then start another path with that node as the starting point. Once the new path terminates, we simply append the new path onto the original path.  
+
+We repeat the above process until all edges have been covered.
+
+
 
 
 
