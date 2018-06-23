@@ -36,8 +36,18 @@ Our ideas above tell us if there exists an Eulerian path, but it doesn't tell us
 First, we check to see if there are any nodes with odd degree.  
 If there are exactly 2 nodes with odd degree, we choose one of them as the starting node for the Eularian path.  
 Otherwise, if there are 0 nodes with odd degree, we can pick any node as the starting point.  
+
 At each step, we pick an arbitrary edge of the current node and traverse to the other endpoint, then delete the edge. However, we need to be careful not to traverse any **bridges**. A bridge is an edge that, if removed, causes the graph to become disconnected. We can identify bridges with Tarjan's Algorithm for Bridges.  
+
 We should only traverse bridges if we don't have a choice (i.e. the only edge left is a bridge). Otherwise, we should always traverse non-bridge edges.  
+
+The algorithm terminates once all edges have been traversed.  
+The proof of correctness of Fleury's Algorithm is somewhat complex, so we won't discuss it here.  
+
+#### Hierholzer's Algorithm
+Hierholzer's Algorithm is a faster algorithm used to find **Eulerian cycles**, which are Eularian paths that start and end on the same node. For an Eulerian cycle to exist, all nodes must have an even degree.  
+We start at any arbitrary node and traverse the edge in the same manner as in Fleury's Algorithm. The only difference is that we have no restrictions on which edges we can traverse. 
+
 
 
 
