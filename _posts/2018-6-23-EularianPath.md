@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Eularian Path
+title: Eularian Paths
 ---
 #### Intro
 An **Eulerian Path**, named after mathematician Leonhard Euler, is a traveral of a graph that visits each edge exactly once.  
