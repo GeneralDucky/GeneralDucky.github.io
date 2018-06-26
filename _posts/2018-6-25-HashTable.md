@@ -1,3 +1,7 @@
+---
+layout: post
+title: Hash Table
+---
 ##### Introduction
 Hash Table is a data structure that is extremely efficient at storing and retrieving values.  
 A hash table achieves O(1) time for retrieval of a value, in comaprison to O(N) for unsorted array.  
