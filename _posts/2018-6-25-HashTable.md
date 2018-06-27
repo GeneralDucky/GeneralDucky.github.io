@@ -27,7 +27,7 @@ Compression functions should ideally minimize collisions for a set of hash codes
 Because collisions are guarenteed to occur, we need to be able to handle them.  
 There are 2 main types of collision handling schemes. We'll use Picture 1 and the following example:  
 
-
+![](/images/Pic6.PNG)
 
 Suppose we are storing letters in our hash table. The client wants to insert the letter B. Let's assume that B is hashed/compressed to location 2. We want to insert B into position 2, but letter C is already there.
 1. **Linear Probing**: We will simply insert B into slot number (2 + 1) % (size of table) = 3 % 8 = 3. In this case, location 3 is also occupied, so we will go to location 4 and place B there. Later on, if we want to retrieve B again, we start at position 2 and continue traversing until B is found.   
@@ -35,7 +35,7 @@ One problem with linear probing is that entries in the hash table tend to clump 
 
 2. **Separate Chaining**: Another simple solution is to have each entry in the array be a data structure storing entries that hash to that location. In our example, we would simply place B inside the list stored at location 2, resulting in the following: 
 
-
+![](/images/Pic6sub1.PNG)
 
   When we need to retrieve B, we simply go to position 2 and do a complete search of the list at location 2. We need to keep the list     sizes relatively small so that lookup is quick. The value n/N = \lambda, where n is the number of elements in the hash table and N is   the size of the table, is known as the **load factor**. Through experiments, it has been determined that the load factor should remain   under 0.9 for good performance. 
 
