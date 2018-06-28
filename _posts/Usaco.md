@@ -1,0 +1,16 @@
+---
+layout: post
+title: ???
+---
+In the problem [Roadblock][http://www.usaco.org/index.php?page=viewproblem2&cpid=400) from USACO Gold February 2014, we are asked to sabatoge Farmer John's commute to his barn by rolling a single haybale onto a path, doubling the time it takes to traverse that path.  
+The question is, which path do we sabatoge to maximize the amount of time by which Farmer John's most optimal route is lengthened.  
+
+We can use Dijkstra's Algorithm to find Farmer John's original optimal path.  
+However, we need to figure out which path to sabatage.  
+An obvious solution is to use brute force by selecting a path, doubling its weight, then using Dijkstra's Algorithm to compute the new optimal path. We repeat the process for all *M* edges.  
+Unfortunately, this solution is too slow. Since Dijkstra's is O(MlogN), this brute force solution works in O(M^2logN), which is too slow in this situation.  
+
+However, notice that if we sabatoge an edge that is not on Farmer John's original path, Farmer John can just take that same path with no additional cost, resulting in a difference of 0.  
+
+Thus, we should only sabatoge edges that are in Farmer John's original path. There are O(N) such edges.  
+Now, we can use a brute force algorithm to test every edge on Farmer Jonh's path. This gives us an algorithm running in O(NMlogN) time, which is fast enough for a competitive programming situation.  
