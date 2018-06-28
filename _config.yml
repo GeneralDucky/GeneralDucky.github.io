@@ -20,9 +20,9 @@ footer-links:
   dribbble:
   email:
   facebook:
-    app_id: 1234
-    publisher: 1234
-    admins: 1234
+    app_id: 
+    publisher: 
+    admins:   
   flickr:
   github: 
   instagram:
@@ -30,8 +30,8 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
-    username: TheKing
-    card: summary
+    username: 
+    card: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
