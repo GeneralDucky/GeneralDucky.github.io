@@ -11,6 +11,8 @@ description: High School Student who enjoys CS
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/GeneralDucky/GeneralDucky.github.io/master/images/ProfilePic.jpg
 
+plugins: 
+  - jekyll-seo-tag
 #
 # Flags below are optional
 #
