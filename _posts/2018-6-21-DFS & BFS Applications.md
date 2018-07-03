@@ -1,6 +1,10 @@
 ---
 layout: post
 title: DFS/BFS applications
+keywords:
+  - Bipartite check
+  - connected components
+  - Flood Fill
 --- 
 #### Bipartite check:
 
