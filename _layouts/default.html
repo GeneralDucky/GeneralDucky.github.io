@@ -10,16 +10,12 @@
 
     gtag('config', 'UA-121630845-1');
     </script>
-    {% if page.keywords %}
-      <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
-    {% endif %}
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
     {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+    {% endif %}
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{site.title}} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
