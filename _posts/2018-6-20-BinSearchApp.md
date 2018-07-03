@@ -1,9 +1,12 @@
 ---
 layout: post
-title: Binary Search Applications
+title: USACO Gold 1 February 2005
+keywords: 
+  - USACO
+  - Gold 1 2005
+  - Binary Search
 ---
-Binary Search is not just useful for searching in sorted lists. We can apply the idea of binary search to other problems.    
-To illustrate, let’s examine the [angry cow problem](https://www.spoj.com/problems/AGGRCOW/) from USACO Gold, February 2005 competition.
+Let’s examine the [angry cow problem](https://www.spoj.com/problems/AGGRCOW/) from USACO Gold, February 2005 competition.
 
 The input is quite large (100k), and in a competitive coding environment, this calls for a O(nlogn) solution. 
 
