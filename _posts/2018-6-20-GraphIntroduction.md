@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Graph Introduction
+keywords: 
+  - Graph theory
+  - Introduction to Graphs
+  - Graph representations
 ---
-In this blog, I will assume that the reader has prior programming experience and has knowledge of basic data structures such as Hash Map and Queue. 
-
-In addition, code will be presented in Java
-
 A graph is a collection of vertices (nodes) that are connected with a set of edges. The graph below has 4 nodes and 4 edges.
 
 ![Graph1](/images/Pic1.PNG)
