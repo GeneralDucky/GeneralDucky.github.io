@@ -10,7 +10,10 @@
 
     gtag('config', 'UA-121630845-1');
     </script>
-
+    {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+    {% endif %}
+    
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
     {% include meta.html %}
 
