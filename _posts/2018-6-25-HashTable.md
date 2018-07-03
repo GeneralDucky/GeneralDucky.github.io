@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Hash Table
+keywords: 
+  - Hash table
+  - Seperate chaining
+  - linear probing
 ---
 ##### Introduction
 Hash Table is a data structure that is extremely efficient at storing and retrieving values.  
