@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Eularian Paths
+keywords:
+  - Eulerian Path
+  - Fleury's Algorithm
+  - Hierholzer's Algorithm
 ---
 #### Intro
 An **Eulerian Path**, named after mathematician Leonhard Euler, is a traveral of a graph that visits each edge exactly once.  
