@@ -2,7 +2,7 @@
 layout: post
 title: Dijkstra's Algorithm
 ---
-
+#### Algorithm description
 Dijkstra's Algorithm, invented by famous computer scientist E.W. Dijkstra, is an algorithm used to find the shortest path between 2 points on a **weighted graph**. A weighted graph is a graph in which the each edge is associated with a numerical value. Depending on the context, that value can represent the cost of traversing the edge, the length of the edge, etc. Dijkstra's Algorithm only works when edge lengths are nonnegative. 
 
 Dijkstra did not present an implentation in his original paper. We will present a common implentation of Dijkstra's Algorithm using a priority queue.   
@@ -44,7 +44,9 @@ public int dijkstra(Node start, Node target){
 }
 //If target is reachable from start, target.dist should now contain the length of the shortest path from start to target.
 ```
+![]{/images/Pic6.PNG}
 
+#### Proof of Correctness
 Dijkstra's Algorithm actually computes the shortest path length between the starting node and every other node. This is known as Single-Source Shortest Path (SSSP) problem. We will prove that Dijkstra's Algorithm solves SSSP.  
 
 Notice that at the end of the while loop, all reachable nodes have been marked. Supposing that DIST[n] represents the actual shortest distance between node *n* and the starting node, we will prove that all marked nodes have the following property at every iteration of the while loop: DIST[n] = dist[n].
