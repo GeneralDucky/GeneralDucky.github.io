@@ -44,7 +44,8 @@ public int dijkstra(Node start, Node target){
 }
 //If target is reachable from start, target.dist should now contain the length of the shortest path from start to target.
 ```
-![]{/images/Pic7.PNG}
+
+![Graph1]{/images/Pic7.PNG}
 
 #### Proof of Correctness
 Dijkstra's Algorithm actually computes the shortest path length between the starting node and every other node. This is known as Single-Source Shortest Path (SSSP) problem. We will prove that Dijkstra's Algorithm solves SSSP.  
@@ -61,7 +62,7 @@ We'll prove this using contradiction. Let's suppose that dist[n] is the smallest
 However, the statement dist[v] + E(v,n) < dist[n] cannot be true! Since all edge lengths are nonnegative, the previous statement would imply that dist[v] < dist[n]. However, our original assumption was that dist[n] was the smallest dist[] value among the unmarked nodes. Thus, it is impossible for dist[n] to be decreased further. We can conclude that dist[n] = DIST[n].
 
 Since we mark the node with the smallest dist[] value at each iteration, all marked nodes have the property that dist[] = DIST[]. 
-Thus, at the end, all nodes have a dist[] value that represents the shortest path length from the starting node.
+Thus, at the end, all nodes have a dist[] value that represents the shortest path length from the starting node. This completes our proof.
 
 
 
