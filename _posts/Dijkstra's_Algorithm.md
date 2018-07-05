@@ -44,7 +44,7 @@ public int dijkstra(Node start, Node target){
 }
 //If target is reachable from start, target.dist should now contain the length of the shortest path from start to target.
 ```
-![]{/images/Pic6.PNG}
+![]{/images/Pic7.PNG}
 
 #### Proof of Correctness
 Dijkstra's Algorithm actually computes the shortest path length between the starting node and every other node. This is known as Single-Source Shortest Path (SSSP) problem. We will prove that Dijkstra's Algorithm solves SSSP.  
