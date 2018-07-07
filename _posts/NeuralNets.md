@@ -12,4 +12,4 @@ My machine uses Intel i5-7500 processor with a GeForce GTX 1070 NVIDIA GPU.
 
 We start off with results from [Daniel Johnson's](http://www.hexahedria.com/2015/08/03/composing-music-with-recurrent-neural-networks/)
 After 10000 epochs, which took me about 6 hours with GPU acceleration, I got the following:
-<a href="myFile.js" download>Click to Download</a>
+<a href="myFile.js" download>melly.mp3</a>
