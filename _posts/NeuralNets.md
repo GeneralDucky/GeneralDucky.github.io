@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Music Generation with Neural Networks
+keywords: 
+  - Neural Network
 ---
 
 In this post, we'll examine a few music generating neural networks. We'll present some generated music first, then we'll try to edit the neural networks to see if we can do better.  
