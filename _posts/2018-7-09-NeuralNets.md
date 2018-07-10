@@ -14,8 +14,7 @@ Training data came from [this website](http://www.piano-midi.de/).
 
 If your machine has a GPU, it's highly recommended to set up GPU drivers like CUDA, as this can speed up your training by several factors and help you avoid spending money. 
 
-Using a machine with Intel i5-7500 processor and a GeForce GTX 1070 NVIDIA GPU, it took me around 6 hours to train 10000 epochs, which got me the following:  
-<a href="/music/composition.mp3" download>composition.mp3</a>  
+Using a machine with Intel i5-7500 processor and a GeForce GTX 1070 NVIDIA GPU, it took me around 6 hours to train 10000 epochs, which got me the following: <a href="/music/composition.mp3" download>composition.mp3</a>  
   
 Here are some samples taken while training:  
 After 100 epochs: <a href="/music/hexasample100.mp3" download>sample100.mp3</a>  
