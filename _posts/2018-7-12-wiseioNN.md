@@ -14,7 +14,7 @@ Using the \*\* kern format, it is now possible treat the music as text, allowing
 Using a machine with Intel i5-7500 processor and a GeForce GTX 1070 NVIDIA GPU, it took me about 30 minutes to train 50 epochs. After training, I got the following result when the training data came from Mozart: <a href="/music/wiseioMozart.mp3" download>mozart.mp3</a>  
 And from Beethoven: <a href="/music/wiseioBeethoven.mp3" download>beethoven.mp3</a>  
 
-The music has good rhythm, and the piece is overall in the correct key. However, there's no melody.
+The music has good rhythm, and the piece is overall in the correct key. However, there's no melody, and the left hand has way too many notes for a classical piece. 
 
 
 
