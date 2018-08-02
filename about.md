@@ -12,4 +12,4 @@ This blog is primarily targeted toward people who have a basic grasp of programm
   
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[compscimastery@gmail.com](mailto:compscimastery@gmail.com)
