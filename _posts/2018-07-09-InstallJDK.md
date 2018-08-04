@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Installing Java Development Kit (JDK) on Linux
+keywords: 
+  -Install Java instructions
+  -Install Java Ubuntu
+  -Install Oracle Java
 ---
 ## About Java
 
