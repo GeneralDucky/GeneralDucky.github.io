@@ -4,7 +4,7 @@ title: Fake News Detector
 keywords: 
   - stuff
 ---
-####Introduction
+#### Introduction
 The Fake News Challenge (FNC) is a competition to explore how machine learning can contribute to the detection of fake news. The first stage of the challenge is to accomplish something called stance detection. Given a short headline and an article, we need to categorize the relationship between the article and headline into 4 categories: Disagree, Agree, Unrelated, and Discusses.
 
 The organizers of the FNC provided a database, which can be found [here](https://github.com/FakeNewsChallenge/fnc-1-baseline). 
@@ -15,12 +15,12 @@ We need a method for capturing the meaning of the article and the headline if we
 
 In addition, we'll need to find a way to vectorize our data. Fortunately, Google has created the Word2Vec neural network which does the job for us. Google also made a [pre-trained network](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing) that contains 3 million words represented by 300-dimensional vectors. We can use the Gensim Python package to load and use this model. A guide for doing so can be found [here](https://machinelearningmastery.com/develop-word-embeddings-python-gensim/).
 
-####Architecture
+#### Architecture
 We'll use 2 encoders in our architecture - one to capture meaning from the article, and one to capture meaning from the headline. The hidden state from both encoders are passed to two fully connected feedforward layers, then to the final softmax layer. In addition, the initial state of the headline encoder is set to be the hidden state of the last LSTM unit in the article encoder.
 
 ![Architecture](/images/FakeNews.PNG)
 
-####Results
+#### Results
 We trained the network for 135 epochs and got the following results:
 
 Not too bad! Although the dataset is heavily skewed toward the Unrelated category, we see that our network was still occasionally able to recognize the other 3 categories.
