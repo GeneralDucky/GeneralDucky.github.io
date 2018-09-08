@@ -20,19 +20,16 @@ We'll use 2 encoders in our architecture - one to capture meaning from the artic
 
 ![Architecture](/images/FakeNews.PNG)
 #### Results
-We trained the network for 135 epochs and got the following confusion matrix as a result. The columns represent the output from our model, and the rows represent the correct answer.
+We trained the network for 135 epochs and got the following confusion matrix as a result. The columns represent the output from our model, and the rows represent the correct answer. a a a
 
-\-------------------------------------------------------------  
+  
 |           |   agree   | disagree  |  discuss  | unrelated |  
-\-------------------------------------------------------------  
+|-----------|-----------|-----------|-----------|-----------|
 |   agree   |    128    |     0     |    142    |    582    |  
-\-------------------------------------------------------------  
 | disagree  |    21     |     0     |    28     |    209    |  
-\-------------------------------------------------------------  
 |  discuss  |    152    |    16     |    433    |   1759    |  
-\-------------------------------------------------------------  
 | unrelated |    672    |    22     |   1413    |   6469    |  
-\-------------------------------------------------------------  
+
 Score: 2268.0 out of 5614.0     (40.399002493765586%)
 
 Not too bad! Although the dataset is heavily skewed toward the Unrelated category, we see that our network was still occasionally able to recognize the other 3 categories.
