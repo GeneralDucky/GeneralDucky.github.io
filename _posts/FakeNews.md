@@ -19,13 +19,25 @@ In addition, we'll need to find a way to vectorize our data. Fortunately, Google
 We'll use 2 encoders in our architecture - one to capture meaning from the article, and one to capture meaning from the headline. The hidden state from both encoders are passed to two fully connected feedforward layers, then to the final softmax layer. In addition, the initial state of the headline encoder is set to be the hidden state of the last LSTM unit in the article encoder.
 
 ![Architecture](/images/FakeNews.PNG)
-
 #### Results
-We trained the network for 135 epochs and got the following results:
+We trained the network for 135 epochs and got the following confusion matrix as a result. The columns represent the output from our model, and the rows represent the correct answer.
+
+\-------------------------------------------------------------  
+|           |   agree   | disagree  |  discuss  | unrelated |  
+\-------------------------------------------------------------  
+|   agree   |    128    |     0     |    142    |    582    |  
+\-------------------------------------------------------------  
+| disagree  |    21     |     0     |    28     |    209    |  
+\-------------------------------------------------------------  
+|  discuss  |    152    |    16     |    433    |   1759    |  
+\-------------------------------------------------------------  
+| unrelated |    672    |    22     |   1413    |   6469    |  
+\-------------------------------------------------------------  
+Score: 2268.0 out of 5614.0     (40.399002493765586%)
 
 Not too bad! Although the dataset is heavily skewed toward the Unrelated category, we see that our network was still occasionally able to recognize the other 3 categories.
 
-####Possible Improvements
+#### Possible Improvements
 Because the dataset is unbalanced (there are too many data points in the Unrelated category), our network will be biased toward the Unrelated category. This can be somewhat remedied by using a penalized model. This type of model increases the error incurred when the network makes a mistake on classifying the underrepresented categories, and helps bias the model toward these categories.
 
 
