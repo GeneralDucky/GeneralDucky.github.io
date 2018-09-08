@@ -16,8 +16,10 @@ In addition, we'll need to find a way to vectorize our data. Fortunately, Google
 ####Architecture
 We'll use 2 encoders in our architecture - one to capture meaning from the article, and one to capture meaning from the headline. The hidden state from both encoders are passed to two fully connected feedforward layers, then to the final softmax layer. In addition, the initial state of the headline encoder is set to be the hidden state of the last LSTM unit in the article encoder.
 
+![Architecture](/images/FakeNews.PNG)
+
 ####Results
-We trained the network for 150 epochs and got the following results:
+We trained the network for 135 epochs and got the following results:
 
 Not too bad! Although the dataset is heavily skewed toward the Unrelated category, we see that our network was still occasionally able to recognize the other 3 categories.
 
